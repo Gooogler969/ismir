@@ -19,13 +19,13 @@ function Contact() {
             <h4 className="contact-title">{t('contact-suptitle_1')}</h4>
             <form action="">
               <div className="form-group">
-                <input className="form-control" type="text" placeholder="Name" required />
+                <input className="form-control" type="text" placeholder={t('placeholder_name')} required />
               </div>
               <div className="form-group">
                 <input className="form-control" type="email" placeholder="Email" required />
               </div>
               <div className="form-group">
-                <textarea className="form-control" placeholder="Message" rows="7" required></textarea>
+                <textarea className="form-control" placeholder= {t('placeholder_message')} rows="7" required></textarea>
               </div>
               <div className="form-group">
                 <button type="submit" className="form-control send-btn">{t('contact_btn')}</button>

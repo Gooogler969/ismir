@@ -26,8 +26,8 @@ const resources = {
 
 i18n.use(initReactI18next).init({
     resources,
-    lng: 'en', // Set the default language
-    keySeparator: false, // Allow for nested translations without using dots
+    lng: 'en',
+    keySeparator: false,
     interpolation: {
       escapeValue: false,
     },

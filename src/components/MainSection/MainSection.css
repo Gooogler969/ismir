@@ -33,7 +33,7 @@
 
 .main .content {
     z-index: 3;
-    min-width: 800px;
+    max-width: 800px;
     text-align: center;
 }   
 

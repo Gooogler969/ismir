@@ -1,6 +1,11 @@
 {
+    "nav-about" : "Company Introduction",
+    "nav-service" : "Service",
+    "nav-portfolio" : "Portfolio",
+    "nav-btn" : "Contact Us",
     "main-title" : "We create original products",
     "main-suptitle" : "Welcome to the world of labels that make.",
+    "main-btn" : "Contact Us",
     "about-title" : "Company Introduction",
     "about-suptitle" : "The company ISMIR ETIKET started its activity in 2009 and still occupies a special place in the hearts of customers. The business line of our company specializes in the production of quality products on Asian and European equipment for various products of our partners.",
     "service-title" : "Service",
@@ -22,11 +27,13 @@
     "contact-title" : "Contact us",
     "contact-suptitle_1" : "Send a message",
     "contact-suptitle_2" : "Get info",
+    "contact_btn" : "Send Message",
+    "placeholder_name" : "Name",
+    "placeholder_message" : "Message",
     "phone" : "Phone",
     "adress" : "Adress",
     "adress_info" : "Uzbekistan, Namangan city",
     "time" : "Time",
-    "time_info" : "M-S: 9:00 - 18:30",
-    "contact_btn" : "Send Message"
+    "time_info" : "M-S: 9:00 - 18:30"
 
 }

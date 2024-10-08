@@ -16,15 +16,14 @@ function Header() {
     <header>
       <a href="#" className="brand">ISMIR ETIKET</a>
       <div className="navigation">
-        <a href="#main">Company Introduction</a>
-        <a href="#about">Service</a>
-        <a href="#skills">Portfolio</a>
+        <a href="#main">{t('nav-about')}</a>
+        <a href="#about">{t('nav-service')}</a>
+        <a href="#skills">{t('nav-portfolio')}</a>
         <select onChange={(e) => changeLanguage(e.target.value)} className="change-lang btn-nav">
           <option value="en" selected>EN</option>
-          <option value="ru">RU</option>
+          <option value="ru">РУ</option>
         </select>
-          {/* <div><h1>{t('title')}</h1></div> */}
-        <a href="#" className="btn-nav">Contact Us</a>
+        <a href="#" className="btn-nav">{t('nav-btn')}</a>
       </div>
     </header>
   );
