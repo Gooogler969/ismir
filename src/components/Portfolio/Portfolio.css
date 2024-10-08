@@ -1,0 +1,34 @@
+.portfolio .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.portfolio .container .portfolio-card {
+    width: 300px;
+    margin: 15px;
+}
+
+.portfolio .container .card-img {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.portfolio .container .card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 5px; */
+    transition: 0.5s ease;
+}
+
+.portfolio .container .card-img img:hover {
+    transform: scale(1.2);
+}

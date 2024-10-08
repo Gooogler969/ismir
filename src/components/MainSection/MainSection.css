@@ -1,0 +1,128 @@
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url(./img/1006.mov) */
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+  }
+
+.main-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .main-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .main-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.main .content {
+    z-index: 3;
+    min-width: 800px;
+    text-align: center;
+}   
+
+.main .blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 800px;
+    width: 100%;
+    height: 100%;
+   background-color: rgb(0, 0, 0, 0.6);
+   z-index: 1;
+}   
+
+.main .content h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.main .content p {
+    color: rgb(184, 184, 184);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;  
+    transition: 0.5s ease;
+    border: #fff 1px solid;
+    margin-top: 20px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    position: relative;
+    color: #000;
+    font-size: 34px;
+    
+}
+
+.about .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about .content .col-left {
+    position: relative;
+    width: 45%;
+}
+
+.about .content .img-card {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+}
+
+.about .content .img-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about .content .col-right {
+    position: relative;
+    width: 45%;
+}
+
+.about .content p {
+    color: #000;
+    font-size: 18px;
+
+}
