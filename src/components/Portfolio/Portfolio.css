@@ -6,6 +6,14 @@
     margin-top: 20px;
 }
 
+.portfolio .title {
+    margin-bottom: 20px;
+}
+
+.title p {
+    text-align: center;
+}
+
 .portfolio .container .portfolio-card {
     width: 300px;
     margin: 15px;
@@ -31,4 +39,5 @@
 
 .portfolio .container .card-img img:hover {
     transform: scale(1.2);
+
 }

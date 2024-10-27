@@ -7,6 +7,10 @@
     justify-content: space-around;
 }
 
+.service .title {
+    margin-bottom: 20px;
+}
+
 .service-card {
     cursor: pointer;
     width: 300px;

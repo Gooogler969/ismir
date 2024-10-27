@@ -16,7 +16,7 @@ function MainSection() {
             <div className="content">
                 <h2>{t('main-title')}</h2>
                 <p>{t('main-suptitle')}</p>
-                <a href="#" className="btn">{t('main-btn')}</a>
+                <a href="#contact" className="btn">{t('main-btn')}</a>
             </div>
         </section>
     );
