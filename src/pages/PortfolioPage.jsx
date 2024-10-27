@@ -11,7 +11,7 @@ function PortfolioPage() {
       <section className="main">
         <div className="blur"></div>
         <div className="main-img">
-          <img src={MainBg} />
+          <img src={MainBg} alt="img" />
         </div>
         <div className="content">
           <h1 className='main-title'>Portfolio</h1>

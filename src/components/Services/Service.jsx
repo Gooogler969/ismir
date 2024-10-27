@@ -34,7 +34,7 @@ function ServiceCard({ icon, title, description }) {
       </div>
       <h3>{title}</h3>
       <p>{description}</p>
-      <a href="#" className="button"> {t('service-btn')} </a>
+      <a href="/" className="button"> {t('service-btn')} </a>
     </div>
   );
 }
