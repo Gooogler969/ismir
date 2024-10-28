@@ -16,8 +16,8 @@ function Header() {
 
   return (
     <header>
-      <a href="/" className="brand">ISMIR ETIKET</a>
-      <div className="navigation">
+      <a href="/" className="text-white text-2xl font-thin none">ISMIR ETIKET</a>
+      <div className="relative flex items-center gap-5">
         <Link to="/about">{t('nav-about')}</Link>
         <Link to="/service">{t('nav-service')}</Link>
         <Link to="/portfolio">{t('nav-portfolio')}</Link>

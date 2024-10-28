@@ -17,22 +17,7 @@ header.nav-hidden {
     padding: 20px 100px;
 }
 
-header .navigation {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-header .brand {
-    color: #fff;
-    font-size: 32px;
-    font-weight: 100;
-    text-decoration: none;
-    
-}
-
-header .navigation a {
+header a {
     color: #fff;
     font-size: 16px;
     /* font-weight: 400; */
