@@ -1,9 +1,9 @@
-.contact .container {
+/* .contact .container {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* margin-top: 20px; */
+    margin-top: 20px;
 }
 
 .container .col-left {
@@ -12,7 +12,7 @@
 }
 
 .container .col-left .m-title {
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
 }
 
 .contact-title {
@@ -36,9 +36,9 @@
     border: 1px solid #000;
     border-radius: 5px;
     resize: none;
-}
+} */
 
-.contact-form-card .form-group .send-btn {
+.send-btn {
     color: #fff;
     background: #000;
     display: inline-block;
@@ -51,13 +51,13 @@
     transition: 0.5s ease;
 }
 
-.contact-form-card .form-group .send-btn:hover {
+.send-btn:hover {
     background: rgba(255, 255, 255, 0);
     color: #000;
     border: 1px solid #000;
 }
 
-.contact .col-right {
+/* .contact .col-right {
     position: relative;
     width: 40%;
     padding-left: 90px;
@@ -91,4 +91,4 @@
 .card .card-text span {
     font-size: 18px;
     font-weight: 300;
-}
+} */

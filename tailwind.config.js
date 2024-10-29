@@ -11,7 +11,16 @@ module.exports = {
     //   xl: '1440px',
     // },
     colors: {
-      secondColor: 'color: rgb(145, 145, 145);'
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'gray': '#eeeeee',
+      'midnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
     },
     extend: {
       container: {
