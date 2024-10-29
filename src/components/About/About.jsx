@@ -13,38 +13,38 @@ import Logo1 from '../../assets/logos/logo1.png'
 // import Logo7 from '../../assets/logos/logo_7.png'
 // import Logo8 from '../../assets/logos/logo_8.png'
 // import Logo9 from '../../assets/logos/logo_9.png'
-// import Logo10 from '../../assets/logos/logo_10.png'
+// import Logo10 from '../../assets/logos/logo_10.png'  
 
 
 function About() {
   const {t} = useTranslation()
   
   return (
-    <section className="about" id="about">
+    <section className="abot container" id="about">
       <div className="title">
         <div className="section-title">{t('about-title')}</div>
       </div>
-      <div className="content">
-        <div className="column col-left">
-          <div className="img-card">
+      <div className="relative w-full flex justify-between mt-5">
+        <div className="relative w-1/2 mr-6">
+          <div className="relative w-full min-h-96">
             <img src={AboutImg  } alt="" />
           </div>
         </div>
-        <div className="column col-right">
-          <p className="paragraph-text">{t('about-suptitle')}</p>
+        <div className="relative w-1/2 ml-6">
+          <p className="text-black text-lg">{t('about-suptitle')}</p>
           <br />
-          <p className="paragraph-text">{t('about-suptitle')}</p>
+          <p className="text-black text-lg">{t('about-suptitle')}</p>
         </div>
       </div>
-      <div className="logos">
-        <div className="logo-corusel">
+      <div className="logos flex ">
+        <div className="logo-corusel flex">
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
-        </div>
-        <div className="logo-corusel">
+          <img src={Logo1} alt="" />
+          <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
@@ -52,15 +52,15 @@ function About() {
           <img src={Logo1} alt="" />
         </div>
       </div>
-      <div className="logos-2">
-        <div className="logo-corusel-miror">
+      <div className="logos-2 flex">
+        <div className="logo-corusel-miror flex">
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
-        </div>
-        <div className="logo-corusel-miror">
+          <img src={Logo1} alt="" />
+          <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />

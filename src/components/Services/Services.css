@@ -1,7 +1,7 @@
-.services-container {
+/* .services-container {
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 20px; */
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -18,7 +18,7 @@
     margin: 20px;
     padding: 20px;
     text-align: center;
-    /* background: #f4f4f4; */
+    background: #f4f4f4;
     border: #000 1px solid;
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
@@ -30,19 +30,19 @@
     width: max-content;
     margin: 0 auto;
     padding-top: 40px;
-}
+} */
 
 .fa-microchip {
     transform: rotate(45);
 }
 
-.service-card:hover {
-    /* box-shadow: 0 0 30px 0 lightgreen; */
+/* .service-card:hover {
+    box-shadow: 0 0 30px 0 lightgreen;
     transform: scale(1.02);
-}
+} */
 
-.services-container .service-card h3 {
-    /* padding-top: 40px; */
+/* .services-container .service-card h3 {
+    padding-top: 40px;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
@@ -53,8 +53,8 @@
 
 .service-card p {
     font-size: 14px;
-    /* width: 250px;
-    height: 90px; */
+    width: 250px;
+    height: 90px;
     color: rgb(145, 145, 145);
 }
 
@@ -63,7 +63,7 @@
     color: #000;
     text-decoration: none;
     padding-top: 20px;
-}
+} */
 
 @media (max-width: 768px) {
     .service-card {

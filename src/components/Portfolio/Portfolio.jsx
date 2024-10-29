@@ -8,11 +8,11 @@ function Portfolio() {
   
   return (
     <section className="portfolio" id="portfolio">
-      <div className="title">
+      <div className="mb-5 text-center">
         <div className="section-title">{t('portfolio-title')}</div>
         <p>{t('portfolio-suptitle')}</p>
       </div>
-      <div className="container">
+      <div className="container flex justify-center flex-row flex-wrap mt-5">
         <PortfolioCard imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9kcIAyUrFOesLWFp7LJHHS8YxbOYwiQX_M5nOI3DO1lUdEXJgPK5GghC3PhxuprqjXQ&usqp=CAU" />
         <PortfolioCard imgSrc="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/101549501_169766781195878_3622668587619057664_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=rt-52_fymJAQ7kNvgEaXXe6&_nc_ht=scontent-nrt1-1.xx&_nc_gid=AujGBblJ3n9PjkgrDylN4IF&oh=00_AYCUezgACMW7SmRLfJcK9C1mDFeuBXEx1oAY5sTzgLzCCg&oe=672B330D" />
         <PortfolioCard imgSrc="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/100089062_163491381823418_3533025056714129408_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=e8nqYTKwUXoQ7kNvgFvgZ3s&_nc_ht=scontent-nrt1-1.xx&_nc_gid=AkgjGynIsZI4DUVv7duvb8X&oh=00_AYD5jAKifi5K1Szt42tr0nQ3ItgFlHXsUlJ0Cf7f5X45Xw&oe=672B2B2B" />
@@ -27,9 +27,9 @@ function Portfolio() {
 
 function PortfolioCard({ imgSrc }) {
   return (
-    <div className="portfolio-card">
-      <div className="card-img">
-        <img src={imgSrc} alt="" />
+    <div className="w-80 m-4">
+      <div className="relative w-full h-60 overflow-hidden">
+        <img className="absolute top-0 left-0 w-full h-full object-cover transition ease-in hover:scale-125" src={imgSrc} alt="" />
       </div>
     </div>
   );

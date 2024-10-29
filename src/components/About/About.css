@@ -1,4 +1,4 @@
-.about .content {
+/* .about .content {
     position: relative;
     width: 100%;
     display: flex;
@@ -15,9 +15,8 @@
     position: relative;
     width: 100%;
     min-height: 450px;
-}
-
-.about .content .img-card img {
+} */
+.relative img {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +25,7 @@
     object-fit: cover;
 }
 
-.about .content .col-right {
+/* .about .content .col-right {
     position: relative;
     width: 45%;
 }
@@ -35,7 +34,7 @@
     color: #000;
     font-size: 18px;
 
-}
+} */
 
 @keyframes corusel {
     from{
@@ -51,6 +50,7 @@
     overflow: hidden;
     padding-top: 70px;
     position: relative;
+    
 }
 
 .logos::before,
@@ -76,13 +76,15 @@
 }
 
 .logo-corusel {
-    display: inline-block;
+    /* display: inline-block; */
+    gap: 50px;
+    padding: 25px;
     animation: 15s corusel infinite linear;
 }
 
 .logo-corusel img {
     width: 200px;
-    margin: 20px 30px;
+
 }
 
 @keyframes corusel-miror {
@@ -124,7 +126,8 @@
 }
 
 .logo-corusel-miror {
-    display: inline-block;
+    /* display: inline-block; */
+    gap: 50px;
     animation: 15s corusel-miror infinite linear;
 }
 

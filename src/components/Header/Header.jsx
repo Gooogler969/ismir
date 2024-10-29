@@ -12,21 +12,23 @@ function Header() {
   const {t, i18n} = useTranslation()
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
-  }
+  } 
 
   return (
     <header>
-      <a href="/" className="text-white text-2xl font-thin none">ISMIR ETIKET</a>
-      <div className="relative flex items-center gap-5">
-        <Link to="/about">{t('nav-about')}</Link>
-        <Link to="/service">{t('nav-service')}</Link>
-        <Link to="/portfolio">{t('nav-portfolio')}</Link>
-        
-        <select onChange={(e) => changeLanguage(e.target.value)} className="change-lang btn-nav">
-          <option value="en" >EN</option>
-          <option value="ru">РУ</option>
-        </select>
-        <a href="#contact" className="btn-nav">{t('nav-btn')}</a>
+      <div className="container flex justify-between">
+        <a href="/" className="text-white text-2xl font-thin none">ISMIR ETIKET</a>
+        <div className="flex items-center gap-5">
+          <Link to="/about">{t('nav-about')}</Link>
+          <Link to="/service">{t('nav-service')}</Link>
+          <Link to="/portfolio">{t('nav-portfolio')}</Link>
+          
+          <select onChange={(e) => changeLanguage(e.target.value)} className="change-lang btn-nav">
+            <option value="en" >EN</option>
+            <option value="ru">РУ</option>
+          </select>
+          <a href="#contact" className="btn-nav">{t('nav-btn')}</a>
+        </div>
       </div>
     </header>
   );

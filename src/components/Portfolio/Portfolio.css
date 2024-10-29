@@ -1,4 +1,4 @@
-.portfolio .container {
+/* .portfolio .container {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -33,11 +33,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     transition: 0.5s ease;
 }
 
 .portfolio .container .card-img img:hover {
     transform: scale(1.2);
 
-}
+} */

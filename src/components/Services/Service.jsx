@@ -7,12 +7,12 @@ function Service() {
   const {t} = useTranslation()
 
   return (
-    <section className="service" id="service">
-      <div className="title">
+    <section className="container" id="service">
+      <div className="mb-5">
         <div className="section-title">{t('service-title')}</div>
       </div>
 
-      <div className="services-container">
+      <div className="max-w-7xl my-0 mx-auto flex flex-wrap justify-around">
         <ServiceCard icon="fa-paint-brush" title={t('service-card-title_1')} description={t('service-card-suptitle_1')} />
         <ServiceCard icon="fa-tag" title={t('service-card-title_2')} description={t('service-card-suptitle_2')} />
         <ServiceCard icon="fa-bookmark" title={t('service-card-title_3')} description={t('service-card-suptitle_3')} />
@@ -28,13 +28,13 @@ function ServiceCard({ icon, title, description }) {
   const {t} = useTranslation()
   
   return (
-    <div className="service-card">
-      <div className="icon-container">
+    <div className="cursor-pointer w-72 h-96 m-5 p-5 text-center border-black border-solid border rounded-sm transition-all duration-300 hover:scale-105">
+      <div className="text-6xl w-max my-0 mx-auto pt-10 ease-linear duration-300">
         <i className={`fa ${icon}`}></i>
       </div>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <a href="/" className="button"> {t('service-btn')} </a>
+      <h3 className='text-2xl font-normal text-center uppercase pt-14'>{title}</h3>
+      <p className="text-sm text-slate-500">{description}</p>
+      <a href="/" className="block text-black no-underline pt-10"> {t('service-btn')} </a>
     </div>
   );
 }
