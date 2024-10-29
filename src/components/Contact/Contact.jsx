@@ -1,5 +1,4 @@
 import React from 'react';
-import './Contact.css'
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
 import '../../i18n';
@@ -48,11 +47,11 @@ function Contact() {
 
 function ContactInfoCard({ icon, title, content }) {
   return (
-    <div className="w-72 p-2 flex items-center rounded-md mb-8 bg-gray">
+    <div className="w-80 p-3 flex items-center rounded-md mb-7 bg-gray">
       <div className="text-black text-4xl">
         <i className={`fas ${icon}`}></i>
       </div>
-      <div className="card-text ml-5">
+      <div className="ml-5">
         <h6 className="text-sm font-bold">{title}</h6>
         <span className="text-lg font-light">{content}</span>
       </div>

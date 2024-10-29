@@ -1,5 +1,4 @@
 import React from 'react';
-import './Services.css'
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
 
@@ -12,7 +11,7 @@ function Service() {
         <div className="section-title">{t('service-title')}</div>
       </div>
 
-      <div className="max-w-7xl my-0 mx-auto flex flex-wrap justify-around">
+      <div className="max-w-7xl my-0 mx-auto px-20 flex flex-wrap justify-around">
         <ServiceCard icon="fa-paint-brush" title={t('service-card-title_1')} description={t('service-card-suptitle_1')} />
         <ServiceCard icon="fa-tag" title={t('service-card-title_2')} description={t('service-card-suptitle_2')} />
         <ServiceCard icon="fa-bookmark" title={t('service-card-title_3')} description={t('service-card-suptitle_3')} />

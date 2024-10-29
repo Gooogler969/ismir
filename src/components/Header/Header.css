@@ -17,7 +17,22 @@ header.nav-hidden {
     padding: 20px 100px;
 }
 
-header a {
+header .navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .brand {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 100;
+    text-decoration: none;
+    
+}
+
+header .navigation a {
     color: #fff;
     font-size: 16px;
     /* font-weight: 400; */
@@ -27,14 +42,4 @@ header a {
 
 header .navigation a:hover {
 
-}
-
-.btn-nav {
-    /* color: #000;
-    background: #fff; */
-    font-size: 14px;
-    padding: 5px;
-    text-decoration: none;  
-    transition: 0.5s ease;
-    border: #fff 1px solid;
 }

@@ -20,14 +20,14 @@ function About() {
   const {t} = useTranslation()
   
   return (
-    <section className="abot container" id="about">
+    <section className="container" id="about">
       <div className="title">
         <div className="section-title">{t('about-title')}</div>
       </div>
       <div className="relative w-full flex justify-between mt-5">
         <div className="relative w-1/2 mr-6">
           <div className="relative w-full min-h-96">
-            <img src={AboutImg  } alt="" />
+            <img className="absolute t-0 left-0 h-full w-full object-cover" src={AboutImg  } alt="" />
           </div>
         </div>
         <div className="relative w-1/2 ml-6">
@@ -36,8 +36,8 @@ function About() {
           <p className="text-black text-lg">{t('about-suptitle')}</p>
         </div>
       </div>
-      <div className="logos flex ">
-        <div className="logo-corusel flex">
+      <div className="logos">
+        <div className="logo-corusel">
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
           <img src={Logo1} alt="" />
