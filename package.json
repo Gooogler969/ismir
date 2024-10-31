@@ -43,5 +43,13 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.14"
-  }
+  },
+  "description": "front for ismir etiket",
+  "main": "tailwind.config.js",
+  "keywords": [
+    "ismir",
+    "etiket"
+  ],
+  "author": "Juraev Boburjon",
+  "license": "ISC"
 }

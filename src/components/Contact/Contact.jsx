@@ -12,7 +12,7 @@ function Contact() {
         <div className="section-title">{t('contact-title')}</div>
       </div>
 
-      <div className="container relative w-full flex justify-between">
+      <div className="container relative w-full flex justify-center">
         <div className="relative w-3/5">
           <div className="contact-form-card">
             <h4 className="text-2xl font-light pb-5">{t('contact-suptitle_1')}</h4>

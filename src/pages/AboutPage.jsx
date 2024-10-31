@@ -14,8 +14,8 @@ function ServicePage() {
         <div className="main-img">
           <img src={MainBg} alt="img"/>
         </div>
-        <div className="content">
-          <h1 className='main-title'>Company Introduction</h1>
+        <div className="z-10 min-w-full text-center">
+          <h1 className='text-4xl font-light text-white'>Company Introduction</h1>
         </div>
       </section>
         <About />

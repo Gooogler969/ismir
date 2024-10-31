@@ -26,7 +26,7 @@ function Portfolio() {
 
 function PortfolioCard({ imgSrc }) {
   return (
-    <div className="w-80 m-4">
+    <div className="w-80 m-5">
       <div className="relative w-full h-60 overflow-hidden">
         <img className="absolute top-0 left-0 w-full h-full object-cover transition ease-in hover:scale-125" src={imgSrc} alt="" />
       </div>

@@ -22,15 +22,15 @@ function About() {
   return (
     <section className="container" id="about">
       <div className="title">
-        <div className="section-title">{t('about-title')}</div>
+        <div className="md:text-center section-title">{t('about-title')}</div>
       </div>
-      <div className="relative w-full flex justify-between mt-5">
-        <div className="relative w-1/2 mr-6">
+      <div className="relative w-full flex justify-center mt-5">
+        <div className="relative w-2/5 mr-6">
           <div className="relative w-full min-h-96">
             <img className="absolute t-0 left-0 h-full w-full object-cover" src={AboutImg  } alt="" />
           </div>
         </div>
-        <div className="relative w-1/2 ml-6">
+        <div className="relative w-2/5 ml-6">
           <p className="text-black text-lg">{t('about-suptitle')}</p>
           <br />
           <p className="text-black text-lg">{t('about-suptitle')}</p>

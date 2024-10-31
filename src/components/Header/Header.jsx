@@ -15,14 +15,14 @@ function Header() {
   }
 
   return (
-    <header>
+    <header className="hidden md:flex ">
       <a href="/" className="brand">ISMIR ETIKET</a>
       <div className="navigation">
         <Link to="/about">{t('nav-about')}</Link>
         <Link to="/service">{t('nav-service')}</Link>
         <Link to="/portfolio">{t('nav-portfolio')}</Link>
         
-        <select onChange={(e) => changeLanguage(e.target.value)} className="change-lang btn-nav">
+        <select onChange={(e) => changeLanguage(e.target.value)} className="text-sm p-1.5 underline-none transition duration-500 border border-white border-solid">
           <option value="en" >EN</option>
           <option value="ru">РУ</option>
         </select>
