@@ -1,15 +1,22 @@
 import React from 'react';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../utility/animation';
 
 function Service() {
   const {t} = useTranslation()
 
   return (
     <section className="container" id="service">
-      <div className="mb-5">
+      <motion.div 
+      variants={FadeIn("up", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{once: false, amount: 0.7}} 
+      className="mb-5">
         <div className="section-title">{t('service-title')}</div>
-      </div>
+      </motion.div>
 
       <div className="max-w-7xl my-0 mx-auto px-20 flex flex-wrap justify-around">
         <ServiceCard icon="fa-paint-brush" title={t('service-card-title_1')} description={t('service-card-suptitle_1')} />

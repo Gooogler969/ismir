@@ -3,6 +3,8 @@ import './About.css'
 import AboutImg from '../../images/photo1.jpeg'
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../utility/animation';
 
 import Logo1 from '../../assets/logos/logo1.png'
 // import Logo2 from '../../assets/logos/logo_2.png'
@@ -22,19 +24,34 @@ function About() {
   return (
     <section className="container" id="about">
       <div className="title">
-        <div className="md:text-center section-title">{t('about-title')}</div>
+        <motion.div
+          variants={FadeIn("up", 0.1)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once: false, amount: 0.7}}
+          className="md:text-center section-title">{t('about-title')}</motion.div>
       </div>
       <div className="relative w-full flex justify-center mt-5">
-        <div className="relative w-2/5 mr-6">
+        <motion.div
+        variants={FadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}} 
+        className="relative w-2/5 mr-6">
           <div className="relative w-full min-h-96">
             <img className="absolute t-0 left-0 h-full w-full object-cover" src={AboutImg  } alt="" />
           </div>
-        </div>
-        <div className="relative w-2/5 ml-6">
+        </motion.div>
+        <motion.div
+        variants={FadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{once: false, amount: 0.7}} 
+        className="relative w-2/5 ml-6">
           <p className="text-black text-lg">{t('about-suptitle')}</p>
           <br />
           <p className="text-black text-lg">{t('about-suptitle')}</p>
-        </div>
+        </motion.div>
       </div>
       <div className="logos">
         <div className="logo-corusel">

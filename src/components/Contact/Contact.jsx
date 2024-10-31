@@ -2,15 +2,22 @@ import React from 'react';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
 import '../../i18n';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../utility/animation';
 
 function Contact() {
     const {t} = useTranslation()
 
   return (
     <section className="contact" id="contact">
-      <div className="title">
+      <motion.div 
+      variants={FadeIn("up", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{once: false, amount: 0.7}} 
+      className="title">
         <div className="section-title">{t('contact-title')}</div>
-      </div>
+      </motion.div>
 
       <div className="container relative w-full flex justify-center">
         <div className="relative w-3/5">

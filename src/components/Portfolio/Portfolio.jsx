@@ -1,16 +1,23 @@
 import React from 'react';
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { FadeIn } from '../utility/animation';
 
 function Portfolio() {
   const {t} = useTranslation()
   
   return (
     <section className="portfolio" id="portfolio">
-      <div className="mb-5 text-center">
+      <motion.div 
+      variants={FadeIn("up", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{once: false, amount: 0.7}} 
+      className="mb-5 text-center">
         <div className="section-title">{t('portfolio-title')}</div>
         <p>{t('portfolio-suptitle')}</p>
-      </div>
+      </motion.div>
       <div className="container flex justify-center flex-row flex-wrap mt-5">
         <PortfolioCard imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9kcIAyUrFOesLWFp7LJHHS8YxbOYwiQX_M5nOI3DO1lUdEXJgPK5GghC3PhxuprqjXQ&usqp=CAU" />
         <PortfolioCard imgSrc="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.6435-9/101549501_169766781195878_3622668587619057664_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=rt-52_fymJAQ7kNvgEaXXe6&_nc_ht=scontent-nrt1-1.xx&_nc_gid=AujGBblJ3n9PjkgrDylN4IF&oh=00_AYCUezgACMW7SmRLfJcK9C1mDFeuBXEx1oAY5sTzgLzCCg&oe=672B330D" />
