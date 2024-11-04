@@ -1,5 +1,5 @@
 import React from 'react';
-import MainBg from '../../images/1006.mov'
+import MainBg from '../../images/11.mov'
 import '../../i18n';
 import { useTranslation } from 'react-i18next';
 

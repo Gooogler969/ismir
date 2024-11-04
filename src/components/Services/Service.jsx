@@ -13,7 +13,6 @@ function Service() {
       variants={FadeIn("up", 0.3)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{once: false, amount: 0.7}} 
       className="mb-5">
         <div className="section-title">{t('service-title')}</div>
       </motion.div>

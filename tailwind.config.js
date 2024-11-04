@@ -23,15 +23,15 @@ module.exports = {
       'bermuda': '#78dcca',
     },
     extend: {
-      container: {
-        center: true,
-        padding: {
-          default: '1rem',
-          sm: '2rem',
-          lg: '5rem',
-          xl: '7rem',
-        }
-      },
+      // container: {
+      //   center: true,
+      //   padding: {
+      //     default: '1rem',
+      //     sm: '2rem',
+      //     lg: '5rem',
+      //     xl: '7rem',
+      //   }
+      // },
     },
   },
   plugins: [],

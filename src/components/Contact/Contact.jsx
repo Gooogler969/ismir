@@ -14,7 +14,6 @@ function Contact() {
       variants={FadeIn("up", 0.3)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{once: false, amount: 0.7}} 
       className="title">
         <div className="section-title">{t('contact-title')}</div>
       </motion.div>
