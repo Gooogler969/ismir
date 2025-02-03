@@ -1,43 +1,99 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import ServicePage from './pages/ServicePage';
-import PortfolioPage from './pages/PortfolioPage';
-import AboutPage from './pages/AboutPage';
+import { React, lazy, Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { SpinnerCircularFixed } from "spinners-react";
 
+const App = lazy(() => import("./App"));
+const ServicePage = lazy(() => import("./pages/ServicePage"));
+const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
+const AboutPage = lazy(() => import("./pages/AboutPage"));
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-
-
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: (
+      <Suspense
+        fallback={
+          <div className="spinner">
+            <SpinnerCircularFixed
+              size={70}
+              thickness={100}
+              speed={100}
+              color="rgba(0, 0, 0, 1)"
+              secondaryColor="rgba(255, 255, 255, 0.5)"
+            />
+          </div>
+        }
+      >
+        <App />
+      </Suspense>
+    ),
   },
   {
     path: "service",
-    element: <ServicePage/>,
+    element: (
+      <Suspense
+        fallback={
+          <div className="spinner">
+            <SpinnerCircularFixed
+              size={70}
+              thickness={100}
+              speed={100}
+              color="rgba(0, 0, 0, 1)"
+              secondaryColor="rgba(255, 255, 255, 0.5)"
+            />
+          </div>
+        }
+      >
+        <ServicePage />
+      </Suspense>
+    ),
   },
   {
     path: "portfolio",
-    element: <PortfolioPage/>,
+    element: (
+      <Suspense
+        fallback={
+          <div className="spinner">
+            <SpinnerCircularFixed
+              size={70}
+              thickness={100}
+              speed={100}
+              color="rgba(0, 0, 0, 1)"
+              secondaryColor="rgba(255, 255, 255, 0.5)"
+            />
+          </div>
+        }
+      >
+        <PortfolioPage />
+      </Suspense>
+    ),
   },
   {
     path: "about",
-    element: <AboutPage/>,
+    element: (
+      <Suspense
+        fallback={
+          <div className="spinner">
+            <SpinnerCircularFixed
+              size={70}
+              thickness={100}
+              speed={100}
+              color="rgba(0, 0, 0, 1)"
+              secondaryColor="rgba(255, 255, 255, 0.5)"
+            />
+          </div>
+        }
+      >
+        <AboutPage />
+      </Suspense>
+    ),
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  
-    <RouterProvider router={router} />
-  
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={router} />);
 
 reportWebVitals();

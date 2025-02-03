@@ -3,12 +3,12 @@ import "../../i18n";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { FadeIn } from "../utility/animation";
-import img1 from "../../images/portfolio/1.jpg";
-import img2 from "../../images/portfolio/2.jpg";
-import img3 from "../../images/portfolio/3.jpg";
-import img4 from "../../images/portfolio/4.jpg";
-import img5 from "../../images/portfolio/5.jpg";
-import img6 from "../../images/portfolio/6.jpg";
+import img1 from "../../images/portfolio/1.webp";
+import img2 from "../../images/portfolio/2.webp";
+import img3 from "../../images/portfolio/3.webp";
+import img4 from "../../images/portfolio/4.webp";
+import img5 from "../../images/portfolio/5.webp";
+import img6 from "../../images/portfolio/6.webp";
 
 function Portfolio() {
   const { t } = useTranslation();
